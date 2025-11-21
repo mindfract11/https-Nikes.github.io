@@ -1,0 +1,220 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url(ps.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: silver;
+}
+section {
+  position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: dimgrey;
+    max-width: 400px;
+    border: 7px double black;
+    border-radius: 20px;
+    box-shadow: 8px 8px black;
+    width: 900px;
+    height: 650px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 30px;
+}
+.logins {
+    font-size: 29px;
+    font-weight: bold;
+    margin-top: 60px;
+    font-weight: bold;
+    color: black;
+}
+.bk {
+    background-color: white;
+    border: 7px double  black ;
+    border-radius: 10px;
+    height: 45px;
+    background-color: dimgrey;
+    color: white;
+    margin: 10px;
+}
+.bk:hover {
+    background-color: white;
+    color: dimgrey;
+}
+.pop {
+    border-radius: 10px;
+    border: 7px double black;
+    background-color: dimgrey;
+    margin: 10px;
+}
+.pop::placeholder{
+    color: white;
+}
+p {
+    color: black;
+}
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-family: Arial, sans-serif;
+}
+
+.radio-group input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #777;
+  border-radius: 50%;
+  margin-right: 6px;
+  position: relative;
+}
+
+.radio-group input[type="radio"]::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform .15s ease;
+}
+
+.radio-group input[type="radio"]:checked::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+.ap {
+    text-decoration: none;
+    color: black;
+}
+section::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 20px;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.7) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    background-size: 300% 300%;
+    animation: glowMove 5s linear infinite;
+    pointer-events: none;
+    z-index: 5;
+}
+
+@keyframes glowMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+section > * {
+    position: relative;
+    z-index: 10;
+}
+label {
+    color: black;
+}
+@media (max-width: 400px) {
+    section {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    form {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .logins {
+        font-size: 24px;
+    }
+
+    .bk {
+        height: 40px;
+    }
+}
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    form {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .logins {
+        font-size: 24px;
+    }
+
+    .bk {
+        height: 40px;
+    }
+}
+@media (max-width: 800px) {
+    section {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    form {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .logins {
+        font-size: 24px;
+    }
+
+    .bk {
+        height: 40px;
+    }
+}
+@media (max-width: 400px) {
+    section {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    form {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .logins {
+        font-size: 24px;
+    }
+
+    .bk {
+        height: 40px;
+    }
+}

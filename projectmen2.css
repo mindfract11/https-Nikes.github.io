@@ -1,0 +1,250 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body {
+    font-family: italic;
+    background: linear-gradient(90deg, #000000, #ffffff, #000000);
+    background-size: 300% 300%;
+    animation: gradientBG 70s ease infinite;
+
+}
+
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main-conteiner .video {
+    background: url(99mZ.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 8px 8px black;
+}
+
+
+
+.navbar {
+    display: flex;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 70px;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list a:hover {
+    background-color: dimgrey;
+}
+
+@media (max-width: 1000px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: 4px double white;
+        background-color: rgb(29, 28, 28);
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(70, 70, 70);
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(29, 28, 28);
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 700px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: 4px double white;
+        background-color: rgb(29, 28, 28);
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(70, 70, 70);
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(29, 28, 28);
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 400px) {
+    .nav-btn {
+        font-size: 2em;
+        padding-inline: 10px;
+        padding-bottom: 3px;
+        border: 4px double white;
+        background-color: rgb(29, 28, 28);
+        color: white;
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn:hover {
+        background-color: rgb(70, 70, 70);
+    }
+
+    .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(29, 28, 28);
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+}
+
+
+.lip {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    margin: 20px 1px 30px 30px;
+}
+
+.nav-btn {
+    margin-left: 10px;
+}
+
+.pgi {
+    
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow:
+        0 0 5px rgb(0, 0, 0),
+        0 0 10px rgb(198, 198, 198),
+        0 0 20px rgb(154, 154, 154),
+        0 0 40px rgb(73, 73, 73);
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(175, 175, 175), 0 0 40px rgb(161, 161, 161);
+    }
+
+    50% {
+        text-shadow: 0 0 2px rgb(102, 102, 102), 0 0 5px rgb(96, 96, 96), 0 0 10px rgb(110, 110, 110), 0 0 20px rgb(89, 89, 89);
+    }
+
+    100% {
+        text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(113, 113, 113), 0 0 20px rgb(0, 0, 0), 0 0 40px rgb(0, 0, 0);
+    }
+}
+.container{
+    display: flex;
+    justify-content: center ;
+    flex-wrap: wrap;
+   gap: 20px;
+}
+.card{
+    width: 220px;
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transform: 0.1s ease infinite;
+    margin-top: 30px;
+}
+.card img {
+    width:220px;
+    height: 200px ;
+    border-radius: 10px;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 8px 8px white;
+    border: 7px double  white;
+}
+button{
+    background-color: black;
+    color: white ;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 4px solid    white;
+}
+p{
+    font-weight: bold;
+}
